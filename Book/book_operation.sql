@@ -17,4 +17,6 @@
 # SELECT author_lname, author_fname FROM books ORDER BY author_lname, author_fname;
 # SELECT UPPER(CONCAT('my favorite author is', ' ', author_fname, ' ', author_lname, '!')) AS 'yell' FROM books ORDER BY author_lname;
 
-INSERT INTO people(name, birthdate, birthtime, birthdt) VALUES ('Thomas', CURDATE(), CURTIME(), NOW());
+#INSERT INTO people(name, birthdate, birthtime, birthdt) VALUES ('Thomas', CURDATE(), CURTIME(), NOW());
+
+SELECT title FROM books WHERE SUBSTRING(title, 1, 1) IN ('C', 'S');
