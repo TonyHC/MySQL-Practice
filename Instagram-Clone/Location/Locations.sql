@@ -1,0 +1,6 @@
+CREATE TABLE Locations (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    city VARCHAR(255) NOT NULL UNIQUE,
+    country VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT NOW()
+);
